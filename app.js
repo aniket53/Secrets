@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 //Initialize Session for cookies and sessions part...
 app.use(session({
-    secret:"thisisthesecretkeytoencrpytthepasswordoftheusers",
+    secret:process.env.SECRET,
     resave:false,
     saveUninitialized:false
 }));
@@ -62,8 +62,8 @@ passport.deserializeUser(function(id,done){
 
 // Google OAuth...
 passport.use(new GoogleStrategy({
-        clientID:"140634002562-u9ua17p75ql1g2oakh6v7620u8ckklii.apps.googleusercontent.com",
-        clientSecret:"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",
+        clientID:process.env.CLIENT_ID,
+        clientSecret:process.env.CLIENT_SECRET,
         callbackURL:"https://serene-hollows-97579.herokuapp.com/auth/google/secrets",
         userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo"
     },
