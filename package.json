@@ -1,0 +1,33 @@
+{
+  "name": "secrets",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Web app build to integrate the authentication and security",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aniket Khot",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "dotenv": "^11.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "https": "^1.0.0",
+    "md5": "^2.3.0",
+    "mongoose": "^6.1.6",
+    "mongoose-encryption": "^2.1.2",
+    "mongoose-find-or-create": "^1.3.1",
+    "mongoose-findorcreate": "^3.0.0",
+    "node": "^17.3.0",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0",
+    "plugin": "^0.0.15"
+  }
+}
